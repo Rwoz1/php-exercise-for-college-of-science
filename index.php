@@ -6,42 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-
-
-<div>
+    
 <?php
-// هذي المحاضره تجريبيه 
-
-# هذا امر الطباعه 
-echo "My first PHP script!";
+$cars = array ("volvo","Bmw","Toyota")
 ?>
-</div>
-<div>
-<?php 
 
-/*
-المتغيرات 
-*/
-$love ="pip install love";
-echo $love;
-
-
-$x = 5;
-$y = 4;
-echo $x + $y;
-?>
-</div>
-<div>
-<?php
-
-$txt1 = "Learn PHP";
-$txt2 = "W3Schools.com";
-
-print '<h2>' . $txt1 . '</h2>';
-print '<p>Study PHP at ' . $txt2 . '</p>';
-
-?>
-</div>
-
+<table border="2" >
+<tr>
+    <td> no </td>
+    <td> car </td>
+</tr>
+<tr>
+    <td>1</td>
+    <td> <?php echo $cars[0] ?> </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td> <?php echo $cars[1] ?> </td>
+</tr>
+<tr>
+    <td>3</td>
+    <td> <?php echo $cars[2] ?> </td>
+</tr>
+</table>
 </body>
 </html>
